@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+
+        <div class="block">
+            <h1>COLOR CHANGER</h1>
+            <div class="colors">
+                <div class="theme1"></div>
+                <div class="theme2"></div>
+                <div class="theme3"></div>
+                <div class="theme4"></div>
+            </div>
+            <p> click on colors above to chnage the background color</p>
+        </div>
+
+</body>
+</html>
+<script>
+    let body=document.querySelector("body")
+    let gold=document.querySelector(".theme2")
+    let red=document.querySelector(".theme3")
+    let green=document.querySelector(".theme4")
+    let aqua=document.querySelector(".theme1")
+    gold.addEventListener("click",function(){
+        body.style.backgroundColor="gold"
+        gold.style.border="2px solid black"
+    })
+    red.addEventListener("click",function(){
+        body.style.backgroundColor="red"
+        red.style.border="2px solid black"
+    })
+    green.addEventListener("click",function(){
+        body.style.backgroundColor="green"
+        green.style.border="2px solid black"
+    })
+    aqua.addEventListener("click",function(){
+        body.style.backgroundColor="aqua"
+        aqua.style.border="2px solid black"
+    })
+    // this will change the color to gold when page is loaded.
+</script>
